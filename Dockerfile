@@ -1,5 +1,5 @@
 # Use official OpenJDK image
-FROM openjdk:17-jdk-slim
+FROM openjdk:18-jdk-slim
 
 # Set environment variables
 ENV FINERACT_HOME=/usr/local/fineract
