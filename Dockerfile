@@ -5,8 +5,8 @@
     # Copy everything
     COPY . .
     
-    # Build the JAR file
-    RUN ./gradlew bootJar
+    # Disable Gradle Daemon to save memory and build the JAR
+    RUN ./gradlew bootJar --no-daemon
     
     # ---- Stage 2: Package ----
     FROM openjdk:17-jdk-slim
